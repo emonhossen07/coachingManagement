@@ -31,8 +31,8 @@ li {
 
 /* == Variable define ==*/
 :root {
-    --primary-color: #d6efff;
-    --secondry-color: #3d5a80;
+    --primary-color: #59E4A8;
+    --secondry-color: #445d52;
     --white-color: #fff;
     --text-color: #b0b0b0;
     --black-color: #1E1D23;
@@ -217,26 +217,48 @@ p {
 .home-section {
     .top-banner {
         width: 100%;
-        background: url('../images/bg/bg-1.jpg') no-repeat center;
+        background: url('../img/bg.png') no-repeat center;
         background-size: cover;
-        padding: 12rem 0 4rem;
-        background: rgb(236,245,12);
-background: radial-gradient(circle, rgba(236,245,12,1) 0%, rgba(118,136,29,1) 100%);
     }
-
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0px 100px 0px;
+    }
+    h1 {
+        color: var(--primary-color);
+    }
     .top-banner p {
-        color: var(--white-color);
+        color: var(--black-color);
     }
-    
 }
 
+.achivment-section {
 
+    .card {
+    }
+    span {
+        color: var(--black-color);
+        font-weight: 500;
+        font-size: 25px;
+    }
+    h4 {
+        color: var(--black-color);
+    }
+}
 
+.program-section {
+    h2{
+        color: var(--black-color);
+    }
+    p {
+        color: var(--black-color);
+    }
+}
 
 .footer-section {
-    background: rgb(236,245,12);
-background: radial-gradient(circle, rgba(236,245,12,1) 0%, rgba(118,136,29,1) 100%);
-    
+
 
     h5 {
         color: var(--white-color) !important;

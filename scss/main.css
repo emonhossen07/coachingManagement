@@ -30,7 +30,7 @@ li {
 
 /* == Variable define ==*/
 :root {
-  --primary-color: #F5CA48;
+  --primary-color: #ffffff;
   --secondry-color: #3A336F;
   --white-color: #fff;
   --text-color: #b0b0b0;
@@ -119,7 +119,6 @@ p {
   font-size: 0.9375rem;
   font-weight: 600;
   text-transform: capitalize;
-  border-radius: 0.5rem;
   box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
   transition: all 0.4s ease-out 0s;
 }
@@ -198,7 +197,7 @@ p {
 .home-section .top-banner {
   width: 100%;
   background-size: cover;
-  background: #3A336F;
+  background: var(--secondry-color);
 }
 .home-section .row {
   display: flex;
@@ -216,21 +215,26 @@ p {
 .course-section {
   text-align: center;
 }
-.course-section .top-banner p {
-  color: var(--white-color);
+.course-section p {
+  color: var(--black-color);
 }
 .course-section .card {
   border: none;
-  background: #F5CA48 !important;
-  border-radius: 0.9rem;
+  background: transparent;
   background-size: cover;
-  box-shadow: 12px 12px 2px 1px #3A336F;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.course-section .card-body {
+  transition: all 0.14s ease-in-out 0s;
+}
+.course-section .card-body:hover {
+  margin-top: -8px;
 }
 .course-section h2 {
   color: var(--black-color);
 }
 .course-section h3 {
-  color: var(--white-color);
+  color: var(--black-color);
   padding-top: 10px;
 }
 .course-section .all-courses {
@@ -254,16 +258,25 @@ p {
   color: var(--black-color);
 }
 
+.popular-courses-area {
+  background: var(--secondry-color);
+}
 .popular-courses-area .seat-rating-fee {
   background: #e6e6e6;
-  border-radius: 0px 0px 10px 10px;
   display: flex;
   justify-content: space-between;
   height: 45px;
 }
+.popular-courses-area h2 {
+  color: var(--white-color);
+}
 .popular-courses-area .single-popular-course {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  border-radius: 10px;
+  background: var(--white-color);
+  transition: all 0.14s ease-in-out 0s;
+}
+.popular-courses-area .single-popular-course:hover {
+  margin-top: -8px;
 }
 .popular-courses-area a {
   color: var(--text-color);
@@ -278,13 +291,9 @@ p {
   color: #b0b0b0;
   margin-left: 20px;
 }
-.popular-courses-area .img-fluid {
-  border-radius: 10px 10px 0px 0px;
-}
 .popular-courses-area .free {
   display: inline-block;
-  border-radius: 0 0 6px 0;
-  background-color: var(--secondry-color);
+  background-color: var(--black-color);
   text-align: center;
   font-size: 12px;
   font-weight: 700;
@@ -305,14 +314,21 @@ p {
   background: var(--primary-color);
 }
 .section_gap .clock_sec .clockinner {
-  background: var(--secondry-color);
-  color: var(--white-color);
+  background: transparent;
+  color: var(--black-color);
   padding: 35px 20px;
   margin-right: 15px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   border-radius: 5px;
   margin-top: 65px;
+}
+.section_gap h2 {
+  color: var(--black-color);
+}
+.section_gap p {
+  color: var(--black-color);
 }
 .section_gap .register_form {
   background: #fff;
@@ -323,8 +339,11 @@ p {
 .section_gap .register_form input {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #eeeeee;
+  outline: none;
   padding: 12px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 .section_gap .register_form .primary-btn {
   width: 100%;
@@ -334,13 +353,14 @@ p {
   font-weight: 600;
   margin-top: 30px;
   padding: 10px;
-  color: var(--secondry-color);
-  background: var(--primary-color);
+  color: var(--white-color);
+  background: var(--secondry-color);
   transition: all 0.4s ease-out 0s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 .section_gap .primary-btn:hover {
-  background: var(--secondry-color);
-  color: var(--primary-color);
+  background: var(--black-color);
+  color: var(--white-color);
 }
 
 .footer-section {
@@ -384,8 +404,8 @@ p {
   width: 40%;
   border: none;
   font-size: 16px;
-  color: #fff;
-  background: var(--primary-color);
+  color: var(--white-color);
+  background: var(--black-color);
   padding: 10px;
   padding: 0 30px;
   cursor: pointer;

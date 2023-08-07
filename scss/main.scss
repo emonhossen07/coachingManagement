@@ -138,20 +138,14 @@ p {
     padding-bottom: 4.25rem;
 }
 
-.text-content {
-    width: 70%;
-    margin: auto;
-}
-
-.content-section h2,
-.testimonial-section h2,
-.book-food-text h2 {
-    color: var(--white-color);
-}
 
 
+// 
+// home page css start here
+// 
 
-// header design
+
+// header section css start here 
 .header-section {
     .navigation-wrap {
         position: fixed;
@@ -213,12 +207,9 @@ p {
     }
 }
 
-.home-section {
-    .top-banner {
-        width: 100%;
-        background-size: cover;
-        background: var(--secondry-color);
-    }
+// home section css start here
+.hero-section {
+    background: var(--secondry-color);
 
     .row {
         display: flex;
@@ -236,41 +227,13 @@ p {
     }
 }
 
-// .achivment-section {
-
-//     .container {
-//         box-shadow: 0px 0px 10px #F5CA48;
-//         background: #F5CA48;
-//         border-radius: 6px;
-//     }
-//     span {
-//         color: var(--white-color);
-//         font-weight: 500;
-//         font-size: 25px;
-//     }
-//     p {
-//         color: var(--white-color);
-//     }
-// }
-
+// course section css start here
 .course-section {
     text-align: center;
 
-     p {
+    p {
         color: var(--black-color);
     }
-    .card {
-        border: none;
-        background: transparent;
-        background-size: cover;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    }
-    .card-body {
-        transition: all 0.14s ease-in-out 0s;
-    }
-    .card-body:hover {
-        margin-top: -8px;
-    } 
 
     h2 {
         color: var(--black-color);
@@ -280,6 +243,22 @@ p {
         color: var(--black-color);
         padding-top: 10px;
     }
+
+    .card {
+        border: none;
+        background: transparent;
+        background-size: cover;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    }
+
+    .card-body {
+        transition: all 0.14s ease-in-out 0s;
+    }
+
+    .card-body:hover {
+        margin-top: -8px;
+    }
+
     .all-courses {
         width: 15%;
         margin: auto;
@@ -295,28 +274,23 @@ p {
         background-color: transparent;
         color: var(--secondry-color);
     }
-}
 
-.program-section {
-    h2 {
-        color: var(--black-color);
-    }
-
-    p {
-        color: var(--black-color);
+    .all-courses {
+        margin-top: 40px;
     }
 }
 
-
-
-.popular-courses-area {
+//  popular courses section css start here
+.popular-courses-section {
     background: var(--secondry-color);
+
     .seat-rating-fee {
         background: #e6e6e6;
         display: flex;
         justify-content: space-between;
         height: 45px;
     }
+
     h2 {
         color: var(--white-color);
     }
@@ -326,6 +300,7 @@ p {
         background: var(--white-color);
         transition: all 0.14s ease-in-out 0s;
     }
+
     .single-popular-course:hover {
         margin-top: -8px;
     }
@@ -355,6 +330,7 @@ p {
         text-transform: uppercase;
         color: #ffffff;
         padding: 13.5px 22px;
+
         :hover {
             color: var(--white-color) !important;
         }
@@ -367,7 +343,8 @@ p {
     }
 }
 
-.section_gap {
+//  registration section css start here
+.registration-section {
     background: var(--primary-color);
 
     .clock_sec .clockinner {
@@ -381,9 +358,11 @@ p {
         border-radius: 5px;
         margin-top: 65px;
     }
+
     h2 {
         color: var(--black-color);
     }
+
     p {
         color: var(--black-color);
     }
@@ -425,15 +404,8 @@ p {
     }
 }
 
+//  footer section css start here
 .footer-section {
-    background: var(--secondry-color);
-
-    h5 {
-        color: var(--white-color) !important;
-    }
-}
-
-.footer {
     background: var(--secondry-color);
 
     .socail_links {
@@ -541,8 +513,20 @@ p {
     }
 }
 
-// mobile responsive start here 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// mobile responsive start here 
 @media (max-width:991px) {
     .text-content {
         width: 100%;
@@ -561,10 +545,6 @@ p {
         line-height: 1.875rem;
         color: var(--white-color);
     }
-
-    .top-banner {
-        padding: 9.375rem 0 9.375rem;
-    }
 }
 
 
@@ -579,14 +559,71 @@ p {
         line-height: 28px;
     }
 
-    .top-banner {
-        padding: 10.375rem 0 9.375rem;
+    // hero section
+    .hero-section {
+        .row {
+            padding: 120px 0px 60px 0px;
+            flex-direction: column-reverse;
+            text-align: center;
+
+            img {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    // courses section
+    .course-section {
+        .main-card {
+            margin-bottom: 40px;
+        }
+
+        .all-courses {
+            width: 40%;
+            margin-top: 0px;
+        }
+    }
+
+    // popular section
+    .popular-courses-section {
+        .single-popular-course {
+            margin-bottom: 40px;
+        }
+
+        .bypass {
+            margin-bottom: 10px !important;
+        }
+    }
+
+    // registation section
+    .registration-section {
+        .clock_sec .clockinner {
+            padding: 20px;
+            margin-right: 0px;
+            margin-top: 25px;
+            background: rgba(0, 0, 0, 0.311);
+            margin: 8px;
+            margin-bottom: 40px;
+        }
+    }
+
+    // footer section {
+    .footer-section {
+        text-align: center;
+        .newsletter_form {
+            width: 100%;
+            margin-bottom: 30px;
+            margin-top: 10px;
+
+            button {
+                width: 55%;
+            }
+        }
+        .footer_title {
+            margin-top: 25px;
+        }
     }
 
 }
 
-@media (max-width:330px) {
-    .testimonial-section .carousel-item {
-        padding: 13rem 3.125rem;
-    }
-}
+@media (max-width:330px) {}

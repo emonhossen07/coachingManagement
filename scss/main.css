@@ -133,17 +133,6 @@ p {
   padding-bottom: 4.25rem;
 }
 
-.text-content {
-  width: 70%;
-  margin: auto;
-}
-
-.content-section h2,
-.testimonial-section h2,
-.book-food-text h2 {
-  color: var(--white-color);
-}
-
 .header-section .navigation-wrap {
   position: fixed;
   width: 100%;
@@ -194,21 +183,19 @@ p {
   color: var(--primary-color);
 }
 
-.home-section .top-banner {
-  width: 100%;
-  background-size: cover;
+.hero-section {
   background: var(--secondry-color);
 }
-.home-section .row {
+.hero-section .row {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px 0px 100px 0px;
 }
-.home-section h1 {
+.hero-section h1 {
   color: var(--primary-color);
 }
-.home-section p {
+.hero-section p {
   color: var(--primary-color);
 }
 
@@ -217,6 +204,13 @@ p {
 }
 .course-section p {
   color: var(--black-color);
+}
+.course-section h2 {
+  color: var(--black-color);
+}
+.course-section h3 {
+  color: var(--black-color);
+  padding-top: 10px;
 }
 .course-section .card {
   border: none;
@@ -229,13 +223,6 @@ p {
 }
 .course-section .card-body:hover {
   margin-top: -8px;
-}
-.course-section h2 {
-  color: var(--black-color);
-}
-.course-section h3 {
-  color: var(--black-color);
-  padding-top: 10px;
 }
 .course-section .all-courses {
   width: 15%;
@@ -250,48 +237,44 @@ p {
   background-color: transparent;
   color: var(--secondry-color);
 }
-
-.program-section h2 {
-  color: var(--black-color);
-}
-.program-section p {
-  color: var(--black-color);
+.course-section .all-courses {
+  margin-top: 40px;
 }
 
-.popular-courses-area {
+.popular-courses-section {
   background: var(--secondry-color);
 }
-.popular-courses-area .seat-rating-fee {
+.popular-courses-section .seat-rating-fee {
   background: #e6e6e6;
   display: flex;
   justify-content: space-between;
   height: 45px;
 }
-.popular-courses-area h2 {
+.popular-courses-section h2 {
   color: var(--white-color);
 }
-.popular-courses-area .single-popular-course {
+.popular-courses-section .single-popular-course {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   background: var(--white-color);
   transition: all 0.14s ease-in-out 0s;
 }
-.popular-courses-area .single-popular-course:hover {
+.popular-courses-section .single-popular-course:hover {
   margin-top: -8px;
 }
-.popular-courses-area a {
+.popular-courses-section a {
   color: var(--text-color);
   font-size: 12px;
 }
-.popular-courses-area .fa-circle {
+.popular-courses-section .fa-circle {
   margin-right: 10px;
   font-size: 8px;
 }
-.popular-courses-area i {
+.popular-courses-section i {
   font-size: 14px;
   color: #b0b0b0;
   margin-left: 20px;
 }
-.popular-courses-area .free {
+.popular-courses-section .free {
   display: inline-block;
   background-color: var(--black-color);
   text-align: center;
@@ -301,19 +284,19 @@ p {
   color: #ffffff;
   padding: 13.5px 22px;
 }
-.popular-courses-area .free :hover {
+.popular-courses-section .free :hover {
   color: var(--white-color) !important;
 }
-.popular-courses-area .seat-rating {
+.popular-courses-section .seat-rating {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.section_gap {
+.registration-section {
   background: var(--primary-color);
 }
-.section_gap .clock_sec .clockinner {
+.registration-section .clock_sec .clockinner {
   background: transparent;
   color: var(--black-color);
   padding: 35px 20px;
@@ -324,19 +307,19 @@ p {
   border-radius: 5px;
   margin-top: 65px;
 }
-.section_gap h2 {
+.registration-section h2 {
   color: var(--black-color);
 }
-.section_gap p {
+.registration-section p {
   color: var(--black-color);
 }
-.section_gap .register_form {
+.registration-section .register_form {
   background: #fff;
   text-align: center;
   padding: 40px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
-.section_gap .register_form input {
+.registration-section .register_form input {
   width: 100%;
   border: none;
   outline: none;
@@ -345,7 +328,7 @@ p {
   margin-top: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
-.section_gap .register_form .primary-btn {
+.registration-section .register_form .primary-btn {
   width: 100%;
   border-radius: 0;
   border: none;
@@ -358,7 +341,7 @@ p {
   transition: all 0.4s ease-out 0s;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
-.section_gap .primary-btn:hover {
+.registration-section .primary-btn:hover {
   background: var(--black-color);
   color: var(--white-color);
 }
@@ -366,28 +349,21 @@ p {
 .footer-section {
   background: var(--secondry-color);
 }
-.footer-section h5 {
-  color: var(--white-color) !important;
-}
-
-.footer {
-  background: var(--secondry-color);
-}
-.footer .socail_links ul {
+.footer-section .socail_links ul {
   display: flex;
 }
-.footer .socail_links ul li {
+.footer-section .socail_links ul li {
   margin-right: 10px;
 }
-.footer .socail_links ul li i {
+.footer-section .socail_links ul li i {
   font-size: 65px;
 }
-.footer .newsletter_form {
+.footer-section .newsletter_form {
   display: flex;
   background: var(--white-color);
   width: 75%;
 }
-.footer .newsletter_form input {
+.footer-section .newsletter_form input {
   width: 80%;
   height: 60px;
   background: transparent;
@@ -399,7 +375,7 @@ p {
   border-radius: 0px;
   font-family: "Poppins", sans-serif;
 }
-.footer .newsletter_form button {
+.footer-section .newsletter_form button {
   height: 60px;
   width: 40%;
   border: none;
@@ -415,18 +391,18 @@ p {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
-.footer h3 {
+.footer-section h3 {
   color: var(--white-color);
 }
-.footer .footer_widget li {
+.footer-section .footer_widget li {
   list-style-type: none;
 }
-.footer .footer_widget a {
+.footer-section .footer_widget a {
   color: var(--white-color);
   font-size: 18px;
   padding-bottom: 30px;
 }
-.footer .footer-social a {
+.footer-section .footer-social a {
   padding: 8px 20px;
   color: #fff;
   background: #2d3092;
@@ -434,26 +410,26 @@ p {
   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4392156863);
   text-align: center;
 }
-.footer .footer-section a:hover {
+.footer-section .footer-section a:hover {
   color: var(--white-color) !important;
 }
-.footer .footer-social a::before {
+.footer-section .footer-social a::before {
   background: #3498db;
   transform: rotate(45deg);
 }
-.footer .footer-social a:nth-child(1) {
+.footer-section .footer-social a:nth-child(1) {
   background: #3b5998;
 }
-.footer .footer-social a:nth-child(2) {
+.footer-section .footer-social a:nth-child(2) {
   background: #1da1f2;
 }
-.footer .footer-social a:nth-child(3) {
+.footer-section .footer-social a:nth-child(3) {
   background: #dd4b39;
 }
-.footer .footer-social a:nth-child(4) {
+.footer-section .footer-social a:nth-child(4) {
   background: #FDC300;
 }
-.footer .footer-social a:nth-child(5) {
+.footer-section .footer-social a:nth-child(5) {
   background: #FE0000;
 }
 
@@ -472,9 +448,6 @@ p {
     line-height: 1.875rem;
     color: var(--white-color);
   }
-  .top-banner {
-    padding: 9.375rem 0 9.375rem;
-  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -484,12 +457,47 @@ p {
     font-size: 1.3rem;
     line-height: 28px;
   }
-  .top-banner {
-    padding: 10.375rem 0 9.375rem;
+  .hero-section .row {
+    padding: 120px 0px 60px 0px;
+    flex-direction: column-reverse;
+    text-align: center;
   }
-}
-@media (max-width: 330px) {
-  .testimonial-section .carousel-item {
-    padding: 13rem 3.125rem;
+  .hero-section .row img {
+    margin-bottom: 30px;
+  }
+  .course-section .main-card {
+    margin-bottom: 40px;
+  }
+  .course-section .all-courses {
+    width: 40%;
+    margin-top: 0px;
+  }
+  .popular-courses-section .single-popular-course {
+    margin-bottom: 40px;
+  }
+  .popular-courses-section .bypass {
+    margin-bottom: 10px !important;
+  }
+  .registration-section .clock_sec .clockinner {
+    padding: 20px;
+    margin-right: 0px;
+    margin-top: 25px;
+    background: rgba(0, 0, 0, 0.311);
+    margin: 8px;
+    margin-bottom: 40px;
+  }
+  .footer-section {
+    text-align: center;
+  }
+  .footer-section .newsletter_form {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .footer-section .newsletter_form button {
+    width: 55%;
+  }
+  .footer-section .footer_title {
+    margin-top: 25px;
   }
 }/*# sourceMappingURL=main.css.map */

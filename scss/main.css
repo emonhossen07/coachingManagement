@@ -205,220 +205,114 @@ p {
   color: var(--primary-color);
 }
 
-.progress-section {
+.notice-board {
   background: #eee;
 }
-.progress-section .progress {
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
-  background: none;
-  margin: 0 auto;
-  box-shadow: none;
-  position: relative;
-}
-.progress-section .progress:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 12px solid #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.progress-section .progress > span {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-.progress-section .progress .progress-left {
-  left: 0;
-}
-.progress-section .progress .progress-bar {
-  width: 100%;
-  height: 100%;
-  background: none;
-  border-width: 12px;
-  border-style: solid;
-  position: absolute;
-  top: 0;
-}
-.progress-section .progress .progress-left .progress-bar {
-  left: 100%;
-  border-top-right-radius: 80px;
-  border-bottom-right-radius: 80px;
-  border-left: 0;
-  transform-origin: center left;
-}
-.progress-section .progress .progress-right {
-  right: 0;
-}
-.progress-section .progress .progress-right .progress-bar {
-  left: -100%;
-  border-top-left-radius: 80px;
-  border-bottom-left-radius: 80px;
-  border-right: 0;
-  transform-origin: center right;
-  animation: loading-1 1.8s linear forwards;
-}
-.progress-section .progress .progress-value {
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
-  background: #eee;
-  font-size: 24px;
-  color: var(--black-color);
-  line-height: 135px;
-  text-align: center;
-  position: absolute;
-  top: 5%;
-  left: 5%;
-}
-.progress-section .progress.blue .progress-bar {
-  border-color: #049dff;
-}
-.progress-section .progress.blue .progress-left .progress-bar {
-  animation: loading-2 1.5s linear forwards 1.8s;
-}
-.progress-section .progress.yellow .progress-bar {
-  border-color: #fdba04;
-}
-.progress-section .progress.yellow .progress-left .progress-bar {
-  animation: loading-3 1s linear forwards 1.8s;
-}
-.progress-section .progress.pink .progress-bar {
-  border-color: #ed687c;
-}
-.progress-section .progress.pink .progress-left .progress-bar {
-  animation: loading-4 0.4s linear forwards 1.8s;
-}
-.progress-section .progress.green .progress-bar {
-  border-color: #1abc9c;
-}
-.progress-section .progress.green .progress-left .progress-bar {
-  animation: loading-5 1.2s linear forwards 1.8s;
-}
-@keyframes loading-1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-}
-@keyframes loading-2 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(144deg);
-  }
-}
-@keyframes loading-3 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(90deg);
-  }
-}
-@keyframes loading-4 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(36deg);
-  }
-}
-@keyframes loading-5 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(126deg);
-  }
-}
-@media only screen and (max-width: 990px) {
-  .progress-section .progress {
-    margin-bottom: 20px;
-  }
-}
-.progress-section .monica-writing-entry-btn {
-  position: absolute;
-  right: 1px;
-  bottom: 1px;
-  pointer-events: all;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  -webkit-user-drag: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  transition: all ease 0.2s;
-  border-radius: 20px;
-  border: 1px solid transparent;
-}
-.progress-section .monica-writing-clickable-item {
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  -webkit-user-drag: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0 4px;
-  height: 26px;
-  color: #a0a0a0;
-}
-.progress-section .monica-writing-clickable-item.monica-writing-first {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-.progress-section .monica-writing-clickable-item.monica-writing-last {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-.progress-section .monica-writing-clickable-item:hover {
-  color: #3872e0;
-}
-.progress-section .monica-writing-divider {
-  background-color: #eeeeee;
-  min-width: 1px;
-  height: 12px;
-}
-.progress-section .monica-writing-entry-btn:hover {
+.notice-board .card-content {
   background: #ffffff;
-  border: 1px solid rgba(115, 114, 120, 0.15);
+  box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+  border-radius: 5px;
 }
-.progress-section .monica-writing-caret {
-  width: 1.5px;
-  background-color: #3872e0;
+.notice-board .card-content img {
+  border-radius: 5px 5px 0px 0px;
+}
+.notice-board .card-content .card {
+  border-radius: 0px 0px 5px 5px;
+}
+.notice-board .btnRight {
+  text-align: right;
+}
+.notice-board .mixitup-btn {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.notice-board .notice-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 0px;
+  line-height: 1.5625rem;
+  background-color: transparent;
+  color: var(--secondry-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: all 0.4s ease-out 0s;
+  text-decoration: underline;
+}
+.notice-board .notice-btn :hover {
+  border: 0px;
+  color: var(--black-color);
+}
+.notice-board .news-section img {
+  height: 150px;
+  width: 100%;
+}
+.notice-board .news-section div [class^=col-] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.notice-board .news-section .card {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.notice-board .news-section .card-title {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+}
+.notice-board .news-section .card-title i {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+  color: #ffa710;
+}
+.notice-board .news-section .card-title i:hover {
+  transform: scale(1.25) rotate(100deg);
+  color: #18d4ca;
+}
+.notice-board .news-section .card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.notice-board .news-section .card-text {
+  height: 80px;
+}
+.notice-board .news-section .card::before,
+.notice-board .news-section .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: "";
   pointer-events: none;
-  position: absolute;
-  border-radius: 1px;
 }
-.progress-section .monica-writing-caret-head {
-  background-color: #3872e0;
-  width: 6px;
-  height: 6px;
-  border-radius: 6px;
-  position: absolute;
-  left: -2.25px;
+.notice-board .news-section .card::before {
+  transform-origin: left top;
 }
-@media print {
-  .progress-section .monica-writing-entry-btn {
-    display: none;
-  }
+.notice-board .news-section .card::after {
+  transform-origin: right bottom;
+}
+.notice-board .news-section .card:hover::before,
+.notice-board .news-section .card:hover::after,
+.notice-board .news-section .card:focus::before,
+.notice-board .news-section .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+.progress-section {
+  background: var(--secondry-color);
+}
+.progress-section h5 {
+  font-size: 25px;
+  color: var(--black-color);
+}
+.progress-section p {
+  color: var(--black-color);
 }
 
 .course-section {

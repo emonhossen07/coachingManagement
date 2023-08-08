@@ -62,5 +62,4 @@ $('.stop').on('click', function () {
 
 // mixitup setup
 
-var mixer = mixitup('.notice-board');
-var mixer = mixitup('.courses-mixed');
+var mixer = mixitup('.mixitup-setup');

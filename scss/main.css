@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *:after,
 *:before {
@@ -113,6 +112,7 @@ p {
 .main-btn {
   display: inline-block;
   padding: 0.625rem 1.875rem;
+  border-radius: 5px;
   line-height: 1.5625rem;
   background-color: var(--primary-color);
   border: 0.1875rem solid var(--primary-color);
@@ -141,7 +141,7 @@ p {
   z-index: 1000;
   transition: all 0.3s ease-out;
   background-color: rgba(0, 0, 0, 0.7803921569);
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 15px;
 }
 .header-section .navigation-wrap .nav-item {
@@ -282,6 +282,7 @@ p {
 
 .course-section {
   text-align: center;
+  padding: 20px;
 }
 .course-section p {
   color: var(--black-color);
@@ -297,11 +298,13 @@ p {
   border: none;
   background: transparent;
   background-size: cover;
-  border: 1px solid var(--secondry-color);
+  box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.05);
 }
-.course-section .all-courses {
-  width: 15%;
-  margin: auto;
+.course-section .main-card {
+  transition: all 0.4s ease-out 0s;
+}
+.course-section .main-card:hover {
+  box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.6);
 }
 .course-section .main-btn {
   background-color: var(--secondry-color);
@@ -311,9 +314,6 @@ p {
 .course-section .main-btn:hover {
   background-color: transparent;
   color: var(--secondry-color);
-}
-.course-section .all-courses {
-  margin-top: 40px;
 }
 
 .popular-courses-section {
@@ -538,27 +538,44 @@ p {
 }
 
 .courses-courses-section {
-  text-align: center;
+  background: #eee;
 }
 .courses-courses-section p {
   color: var(--black-color);
 }
 .courses-courses-section h2 {
-  color: var(--black-color);
+  color: var(--secondry-color);
 }
 .courses-courses-section h3 {
   color: var(--black-color);
   padding-top: 10px;
 }
+.courses-courses-section .mixitup-btn {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+  padding: 8px 0px;
+}
+.courses-courses-section .mixitup-btn button {
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: #eee;
+  color: var(--black-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: all 0.4s ease-out 0s;
+}
 .courses-courses-section .card {
   border: none;
-  background: transparent;
+  background: #fff;
   background-size: cover;
-  border: 1px solid var(--secondry-color);
+  box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.05);
 }
-.courses-courses-section .all-courses {
-  width: 15%;
-  margin: auto;
+.courses-courses-section .main-card {
+  transition: all 0.4s ease-out 0s;
+}
+.courses-courses-section .main-card:hover {
+  box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.6);
 }
 .courses-courses-section .main-btn {
   background-color: var(--secondry-color);
@@ -568,133 +585,6 @@ p {
 .courses-courses-section .main-btn:hover {
   background-color: transparent;
   color: var(--secondry-color);
-}
-.courses-courses-section .all-courses {
-  margin-top: 40px;
-}
-
-.mixitup {
-  /* MEDIA QUERIES STYLES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-}
-.mixitup h4 {
-  font-size: 21px;
-  border-radius: 5px;
-  margin: 0 auto;
-  text-align: center;
-  background: #d2d2d2;
-  color: white;
-  font-weight: 700;
-  padding: 3px 0;
-}
-.mixitup li {
-  margin: 0;
-}
-.mixitup a {
-  font-size: 18px;
-  text-decoration: none;
-}
-.mixitup span {
-  display: block;
-  font-size: 0.75em;
-  font-style: italic;
-  position: relative;
-  top: 5px;
-}
-.mixitup .multi {
-  display: inline;
-  top: 0;
-  left: 3px;
-}
-.mixitup img {
-  max-width: 100%;
-}
-.mixitup .programs,
-.mixitup .courses {
-  margin: 8px 0 0 0;
-}
-.mixitup .programs {
-  font-size: 0;
-  margin-bottom: 15px;
-}
-.mixitup .programs button {
-  outline: none;
-  margin-bottom: 0;
-  background: whitesmoke;
-  width: 50%;
-  height: auto;
-  font-weight: normal;
-  border: 1px solid #ededed;
-  color: #000000;
-  font-size: 14px;
-  padding: 4px 0;
-  text-shadow: 0px 0px 0px #2f6627;
-}
-.mixitup .programs button:hover {
-  background: #99cfe0;
-}
-.mixitup .programs button.programs-filter-btn-active,
-.mixitup .programs button.programs-sort-btn-active {
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5) inset, 0px 0px 1px transparent;
-  background: #3a9fbf;
-  color: white;
-}
-.mixitup .courses {
-  margin-bottom: 15px;
-  font-size: 0;
-  background: whitesmoke;
-}
-.mixitup .courses li {
-  text-align: center;
-  font-size: 14px;
-  display: inline-block;
-  width: 46%;
-  margin: 0 2%;
-}
-.mixitup .courses a {
-  display: block;
-  height: 60px;
-  margin: 15px 0;
-  padding-top: 12.5px;
-  background: whitesmoke;
-  color: black;
-  border: 1px solid white;
-  transition: all 0.4s ease;
-}
-.mixitup .courses a:hover {
-  background: #99cfe0;
-}
-.mixitup .p,
-.mixitup .p a {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  text-align: center;
-}
-@media only screen and (min-width: 750px) {
-  .mixitup .container {
-    width: 95%;
-  }
-  .mixitup .courses a {
-    background: #EBEBEB;
-    border: none;
-  }
-  .mixitup h4 {
-    width: 50%;
-    margin-top: 12px;
-  }
-  .mixitup img {
-    margin-bottom: 0;
-  }
-  .mixitup .programs {
-    margin-bottom: 0;
-  }
-  .mixitup .programs button {
-    width: 25%;
-    margin-bottom: 15px;
-  }
-  .mixitup .courses li {
-    width: 21%;
-  }
 }
 
 .footer-section {

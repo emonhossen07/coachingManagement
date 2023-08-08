@@ -30,49 +30,47 @@
 <body data-bs-target=".navbar" data-bs-spy="scroll" data-bs-offset="100">
 
     <!-- header section start here -->
-    <div class="header-section">
-        <header>
-            <nav class="navbar navbar-expand-lg navigation-wrap">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/education.svg" class="img-fluid w-100">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <!-- <span class="navbar-toggler-icon"></span> -->
-                        <i class="fas fa-stream navbar-toggler-icon" style="color: white;"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link courses" href="pages/courses.html">Courses</a>
-                            </li>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#programs">Our Programs</a>
-                            </li>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#resources">Academic Resources</a>
-                            </li>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#form">Admission Form</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li><button class="main-btn">Log in</button></li>
-                        </ul>
-                    </div>
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navigation-wrap headerPadding">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/education.svg" class="img-fluid w-100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon" style="color: white;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link courses" href="pages/courses.html">Courses</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#programs">Our Programs</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resources">Academic Resources</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#form">Admission Form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li><button class="main-btn">Log in</button></li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-    </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- hero scetion start here -->
     <section class="hero-section" id="home">
@@ -97,6 +95,131 @@
         </div>
     </section>
 
+    <section class="notice-board">
+        <div class="container text-center">
+            <h3>Notice Board</h3>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <div class="row owl-carousel owl-theme">
+                        <div class="col-6 item" style="width: 100%;">
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive img-fluid"
+                                alt="Image" style="width: 100%;">
+                            <p>Current Project</p>
+                        </div>
+                        <div class="col-6 item" style="width: 100%;">
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive img-fluid"
+                                alt="Image" style="width: 100%;">
+                            <p>Current Project</p>
+                        </div>
+                        <div class="col-6 item" style="width: 100%;">
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive img-fluid"
+                                alt="Image">
+                            <p>Project 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mixitup-btn">
+                                <button class="filter-btn btn" data-filter="all">News</button>
+                                <button class="filter-btn btn" data-filter=".updateNews">Update News</button>
+                                <button class="filter-btn btn" data-filter=".result">Result</button>
+                                <button class="filter-btn btn" data-filter=".offter">Offer</button>
+                                <button class="filter-btn btn" data-filter=".oldNews">Old News</button>
+                            </div>
+                        </div>
+                        <div class="mix col-6 updateNews">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Title</h5>
+                                    <p class="card-text">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix col-6 result">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Title</h5>
+                                    <p class="card-text">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix col-6 offter">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Title</h5>
+                                    <p class="card-text">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix col-6 oldNews">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Title</h5>
+                                    <p class="card-text">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+    <!-- progress section start here  -->
+    <section class="progress-section">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-3 col-sm-6">
+                    <div class="progress blue">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">90%</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="progress yellow">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">75%</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="progress pink">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">55%</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="progress green">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">45%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- course section start here -->
     <section class="course-section">
@@ -809,6 +932,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
         integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

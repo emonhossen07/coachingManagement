@@ -59,23 +59,8 @@ $('.stop').on('click', function () {
 
 
 
-// mixitup('#mix-wrapper', {
-//     load: {
-//         sort: 'order:asc'
-//     },
-//       animation: {
-//       effects: 'fade rotateZ(-180deg)',
-//       duration: 700
-//     },
-//     classNames: {
-//       block: 'programs',
-//       elementFilter: 'filter-btn',
-//       elementSort: 'sort-btn'
-//     },
-//     selectors: {
-//       target: '.mix-target'
-//     }
-//   });
 
+// mixitup setup
 
-  var mixer = mixitup('.courses-mixed');
+var mixer = mixitup('.notice-board');
+var mixer = mixitup('.courses-mixed');

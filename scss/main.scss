@@ -370,6 +370,7 @@ p {
         font-size: 25px;
         color: var(--black-color);
     }
+
     p {
         color: var(--black-color);
     }
@@ -549,6 +550,151 @@ p {
     .primary-btn:hover {
         background: var(--black-color);
         color: var(--white-color);
+    }
+}
+
+// why us section css start here 
+.whyus-section {
+    background: var(--secondry-color);
+
+    h2 {
+        color: var(--white-color);
+    }
+
+    .box {
+        background: var(--white-color);
+    }
+
+
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about-section {
+
+    background: var(--secondry-color);
+
+    h2,
+    h3,
+    h4,
+    a {
+        color: var(--white-color) !important;
+    }
+
+    p {
+        color: var(--text-color) !important;
+    }
+
+    .nav-pills {
+        a {
+            color: var(--text-color) !important;
+        }
+    }
+
+    .about .about-img {
+        position: relative;
+        margin: 60px 0 0 60px;
+    }
+
+    .about .about-img:before {
+        position: absolute;
+        inset: -60px 0 0 -60px;
+        z-index: -1;
+        content: "";
+        background: url("../img/about-bg.png") top left;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 575px) {
+        .about .about-img {
+            margin: 30px 0 0 30px;
+        }
+
+        .about .about-img:before {
+            inset: -30px 0 0 -30px;
+        }
+    }
+
+    .about h3 {
+        color: var(--color-secondary);
+        font-family: var(--font-secondary);
+        font-weight: 300;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .about h3 {
+            font-size: 28px;
+        }
+    }
+
+    .about .nav-pills {
+        border-bottom: 1px solid rgba(var(--color-secondary-rgb), 0.2);
+    }
+
+    .about .nav-pills li+li {
+        margin-left: 40px;
+    }
+
+    .about .nav-link {
+        background: none;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--color-secondary);
+        padding: 12px 0;
+        margin-bottom: -2px;
+        border-radius: 0;
+        font-family: var(--font-secondary);
+    }
+
+    .about .nav-link.active {
+        color: var(--color-primary);
+        background: none;
+        border-bottom: 3px solid var(--color-primary);
+    }
+
+    @media (max-width: 575px) {
+        .about .nav-link {
+            font-size: 16px;
+        }
+    }
+
+    .about .tab-content h4 {
+        font-size: 18px;
+        margin: 0;
+        font-weight: 700;
+        color: var(--color-secondary);
+    }
+
+    .about .tab-content i {
+        font-size: 22px;
+        line-height: 0;
+        margin-right: 8px;
+        color: var(--color-primary);
+    }
+}
+
+/*--------------------------------------------------------------
+# invester Section
+--------------------------------------------------------------*/
+
+.inverter-section {
+
+    .clients {
+        padding: 0 0 60px 0;
+    }
+
+    .clients .swiper-slide img {
+        opacity: 0.5;
+        transition: 0.3s;
+        filter: grayscale(100);
+    }
+
+    .clients .swiper-slide img:hover {
+        filter: none;
+        opacity: 1;
     }
 }
 
@@ -760,10 +906,13 @@ p {
     .main-card {
 
         transition: all .4s ease-out 0s;
+
+        img {
+            border-radius: 5px 5px 0px 0px;
+        }
     }
 
     .main-card:hover {
-
         box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 60%);
     }
 
